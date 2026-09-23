@@ -2,14 +2,14 @@ local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 local CoreGui = game:GetService("CoreGui")
 
--- Меняешь ключ только здесь, на GitHub
+
 local CORRECT_KEY = "absoluteCrystal"
 
 local DISCORD_INVITE = "https://discord.gg/2D3atd73y"
 
 local ENV = getgenv and getgenv() or _G
 
--- Эти значения передаются маленьким loader'ом
+
 local TARGET_URL = ENV.CRYSTAL_TARGET_URL
 local SCRIPT_NAME = ENV.CRYSTAL_SCRIPT_NAME or "Crystal Hub"
 
@@ -31,7 +31,7 @@ local function getGuiParent()
 	return CoreGui
 end
 
--- Удаляем старое окно, если auth запустили повторно
+
 pcall(function()
 	local old = getGuiParent():FindFirstChild("CrystalHub_Auth")
 
